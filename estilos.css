@@ -1,0 +1,779 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f7fb;
+
+    color: #333333;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.encabezado {
+
+    background-color: #12355b;
+
+    color: white;
+
+    padding: 20px 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.logo-icono {
+
+    width: 65px;
+
+    height: 65px;
+
+    background-color: #f4a261;
+
+    color: #12355b;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.logo h1 {
+
+    font-size: 25px;
+
+    margin-bottom: 3px;
+
+}
+
+
+.logo p {
+
+    font-size: 14px;
+
+}
+
+
+
+/* =========================================
+   MENÚ
+========================================= */
+
+.menu {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.menu a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+
+}
+
+
+.menu a:hover {
+
+    background-color: #1d70a2;
+
+}
+
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height: 500px;
+
+    background:
+        linear-gradient(
+            rgba(18, 53, 91, 0.82),
+            rgba(18, 53, 91, 0.82)
+        ),
+        url("imagenes/institucion.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 60px 20px;
+
+}
+
+
+.hero-contenido {
+
+    max-width: 800px;
+
+}
+
+
+.hero h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero p {
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.boton {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 13px 25px;
+
+    background-color: #f4a261;
+
+    color: #222222;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.boton:hover {
+
+    background-color: #e76f51;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* =========================================
+   TÍTULO DE PÁGINA
+========================================= */
+
+.titulo-pagina {
+
+    background-color: #dcecf7;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+}
+
+
+.titulo-pagina h2 {
+
+    color: #12355b;
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.titulo-pagina p {
+
+    font-size: 18px;
+
+}
+
+
+
+/* =========================================
+   SECCIONES
+========================================= */
+
+.seccion {
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+}
+
+
+.seccion > h2 {
+
+    text-align: center;
+
+    color: #12355b;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* =========================================
+   DOS COLUMNAS
+========================================= */
+
+.dos-columnas {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+
+}
+
+
+.dos-columnas h3 {
+
+    color: #12355b;
+
+    margin-bottom: 15px;
+
+}
+
+
+.imagen-caja img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.tarjetas {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.tarjeta {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #dddddd;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+
+    transition: 0.3s;
+
+}
+
+
+.tarjeta:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.20);
+
+}
+
+
+.tarjeta h3 {
+
+    color: #12355b;
+
+    margin-bottom: 12px;
+
+}
+
+
+.tarjeta span {
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: #e76f51;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =========================================
+   BLOQUES MISIÓN Y VISIÓN
+========================================= */
+
+.bloque {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.10);
+
+}
+
+
+.bloque h2 {
+
+    color: #12355b;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* =========================================
+   TEXTO
+========================================= */
+
+.texto-centro {
+
+    max-width: 850px;
+
+    margin: 0 auto 20px auto;
+
+    text-align: center;
+
+}
+
+
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contacto-contenedor {
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+}
+
+
+.informacion-contacto,
+.formulario-contacto {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.10);
+
+}
+
+
+.informacion-contacto h2,
+.formulario-contacto h2 {
+
+    color: #12355b;
+
+    margin-bottom: 20px;
+
+}
+
+
+.informacion-contacto p {
+
+    margin-bottom: 12px;
+
+}
+
+
+.informacion-contacto h3 {
+
+    color: #12355b;
+
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.informacion-contacto ul {
+
+    padding-left: 20px;
+
+}
+
+
+.informacion-contacto li {
+
+    margin-bottom: 8px;
+
+}
+
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.formulario-contacto form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.formulario-contacto label {
+
+    margin-top: 12px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+    color: #12355b;
+
+}
+
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #b8c7d6;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+
+}
+
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+
+    border-color: #1d70a2;
+
+    box-shadow:
+        0 0 5px rgba(29, 112, 162, 0.35);
+
+}
+
+
+.formulario-contacto textarea {
+
+    resize: vertical;
+
+}
+
+
+
+/* =========================================
+   BOTÓN FORMULARIO
+========================================= */
+
+.boton-formulario {
+
+    margin-top: 20px;
+
+    padding: 13px;
+
+    background-color: #12355b;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.boton-formulario:hover {
+
+    background-color: #1d70a2;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* =========================================
+   UBICACIÓN
+========================================= */
+
+.ubicacion {
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.10);
+
+}
+
+
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
+
+footer {
+
+    background-color: #12355b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+
+}
+
+
+footer p {
+
+    margin-bottom: 5px;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .encabezado {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
+
+    .logo {
+
+        flex-direction: column;
+
+    }
+
+
+    .dos-columnas {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .tarjetas {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .contacto-contenedor {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .tarjetas {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .menu {
+
+        justify-content: center;
+
+    }
+
+
+    .menu a {
+
+        padding: 8px 10px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .titulo-pagina h2 {
+
+        font-size: 30px;
+
+    }
+
+}
